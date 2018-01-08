@@ -43,17 +43,17 @@ template class stiva<float>;
 
 int main()
 {
-	stiva<char> s;
+	stiva<int> s;
 
 	cout << s;
-	s.push('a');
-	s.push('c');
+	s.push(1);
+	s.push(2);
 	cout << "Afisare stiva: " << s;
 	cout << "TOP: " << s.top() << "\n";
 	s.pop();
 	cout << s;
-	s.push('b');
-	s.push('d');
+	s.push(3);
+	s.push(4);
 	cout << s;
 	s.pop();
 	s.pop();
